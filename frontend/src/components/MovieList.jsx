@@ -14,17 +14,17 @@ const MovieList = () => {
             <table className="striped">
                 <thead>
                 <tr>
-                    <th>Nome</th>
+                    <th>Nombre</th>
                     <th>Tipo</th>
-                    <th>Episódios</th>
-                    <th>Episódio atual</th>
-                    <th>Visto por último</th>
+                    <th>Episodios</th>
+                    <th>Episodio actual</th>
+                    <th>Visto finalmente</th>
                 </tr>
                 </thead>
 
                 <tbody>
                 {movies.map(movie => {
-                    let type = movie.type === 0 ? 'Série' : 'Filme';
+                    let type = movie.type === 0 ? 'Serie' : 'Película';
                     let formatDate = (movie.last_view).split('T', 1)
 
                     return(
