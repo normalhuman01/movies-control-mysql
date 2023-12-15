@@ -3,7 +3,7 @@ module.exports = server => {
     const connection = require('../database/connection');
     
     server.get('/', (require, response) => {
-        response.json({message: 'Bem vindo ao catálogo de séries e filmes'})
+        response.json({message: 'Bienvenido al catálogo de series y películas.'})
     })
 
     server.get('/movies', (require, response) => {
